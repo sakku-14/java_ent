@@ -8,7 +8,7 @@ public class Third {
         System.out.println("あなたの年齢を入力してください");
         String ageString = new java.util.Scanner(System.in).nextLine();
         int age = Integer.parseInt(ageString);
-        int fortune = (int)(Math.random() * 100) % 4;
+        int fortune = new java.util.Random().nextInt(4);
         fortune++;
         for (int i = 0; i < 5; i++) {
             System.out.println(".");
