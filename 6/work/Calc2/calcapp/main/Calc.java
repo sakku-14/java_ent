@@ -1,5 +1,5 @@
 package calcapp.main;
-import calcapp.logic.CalcLogic;
+import calcapp.logic.*;
 
 public class Calc {
     public static void main(String[] args) {
@@ -7,6 +7,6 @@ public class Calc {
         int b = 9;
 
         System.out.println(CalcLogic.tasu(5, 9));
-        System.out.println(CalcLogic.kakeru(5, 9));
+        System.out.println(CalcLogic.kakeru(9, 5));
     }
 }
