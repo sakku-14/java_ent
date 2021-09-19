@@ -4,8 +4,8 @@ import java.util.*;
 public class Cleric {
     int hp = 50;
     int mp = 10;
-    public static final int  MAX_HP = 50;
-    public static final int MAX_MP = 10;
+    static final int  MAX_HP = 50;
+    static final int MAX_MP = 10;
 
     public void selfAid() {
         this.hp = MAX_HP;
