@@ -3,10 +3,14 @@ public class Wand {
     private double power;
 
     public void setName(String name) {
-        this.name = n;
+        if (name == null || name.length() < 3)
+            throw new IllegalArgumentException("名前は３文字以上入力してください。");
+        this.name = name;
     }
     public void setPower(double power) {
-        this.power = p;
+        if (power < 0.5 || power > 100.0)
+            throw new IllegalArgumentException("杖による増幅率は0.5以上100以下の値を入力してください。");
+        this.power = power;
     }
     public String getName() {
         return this.name;
