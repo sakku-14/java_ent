@@ -11,5 +11,13 @@ public class Main {
             e.printStackTrace();
             System.err.println("-----------------");
         }
+
+        try {
+            int x = Integer.parseInt("三");
+        } catch (NumberFormatException e) {
+            System.err.println("********Integer.parseInt*********");
+            e.printStackTrace();
+            System.err.println("*********************************");
+        }
     }
 }
