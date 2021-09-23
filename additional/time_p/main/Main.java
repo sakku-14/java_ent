@@ -1,6 +1,7 @@
 import java.util.Date;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +20,10 @@ public class Main {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
         String ret = sdf.format(d);
         System.out.println("SimpleDateFormat型: [" + sdf + "], method: [" + ret + "]");
+
+        //LocalDateTime
+        System.out.println("*************LocalDateTime*************************");
+        LocalDateTime ldt = LocalDateTime.now();
+        System.out.println("LocalDateTime型: [" + ldt);
     }
 }
