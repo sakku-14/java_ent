@@ -24,6 +24,6 @@ public class Main {
         //LocalDateTime
         System.out.println("*************LocalDateTime*************************");
         LocalDateTime ldt = LocalDateTime.now();
-        System.out.println("LocalDateTime型: [" + ldt);
+        System.out.println("LocalDateTime型: [" + ldt + "]");
     }
 }
