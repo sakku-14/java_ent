@@ -11,6 +11,7 @@ public class MyQuery {
 		
 		Connection con = null;
 		try {
+			//検索
 			con = DriverManager.getConnection("jdbc:mysql://localhost/sukkiri", "root", null);
 			PreparedStatement pstmt = con.prepareStatement("SELECT * FROM ITEMS");
 			ResultSet rs = pstmt.executeQuery();
@@ -19,6 +20,20 @@ public class MyQuery {
 			}
 			rs.close();
 			pstmt.close();
+			
+			//追加・更新・削除
+			//**********追加**************
+//			PreparedStatement pstmt2 = con.prepareStatement("INSERT INTO ITEMS VALUES (?, ?, ?);");
+//			pstmt2.setString(1, "銅のつるぎ");
+//			pstmt2.setInt(2, 10);
+//			pstmt2.setInt(3, 15);
+//			int r = pstmt2.executeUpdate();
+//			if (r != 0) {
+//				System.out.println(r + "件の道具を追加しました");
+//			} else {
+//				System.out.println("道具の追加に失敗しました");
+//			}
+//			pstmt2.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
