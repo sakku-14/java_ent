@@ -34,6 +34,27 @@ public class MyQuery {
 //				System.out.println("道具の追加に失敗しました");
 //			}
 //			pstmt2.close();
+			//**********更新**************
+//			PreparedStatement pstmt3 = con.prepareStatement("UPDATE ITEMS SET WEIGHT=? WHERE NAME = ?;");
+//			pstmt3.setInt(1, 55);
+//			pstmt3.setString(2, "銅のつるぎ");
+//			int r = pstmt3.executeUpdate();
+//			if (r != 0) {
+//				System.out.println(r + "件の道具を更新しました");
+//			} else {
+//				System.out.println("道具の更新に失敗しました");
+//			}
+//			pstmt3.close();
+			//**********削除**************
+//			PreparedStatement pstmt4 = con.prepareStatement("DELETE FROM ITEMS WHERE NAME = ?;");
+//			pstmt4.setString(1, "銅のつるぎ");
+//			int r = pstmt4.executeUpdate();
+//			if (r != 0) {
+//				System.out.println(r + "件の道具を削除しました");
+//			} else {
+//				System.out.println("道具の削除に失敗しました");
+//			}
+//			pstmt4.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
