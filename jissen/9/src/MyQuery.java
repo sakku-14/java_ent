@@ -1,14 +1,13 @@
 import java.sql.*;
 
 public class MyQuery {
-
 	public static void main(String[] args) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			throw new IllegalStateException("ドライバのロードに失敗しました。");
 		}
-		
+		//トランザクション処理をやる！
 		Connection con = null;
 		try {
 			//検索
